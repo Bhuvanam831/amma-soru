@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amma Soru – Homemade Meals & Tiffin Service, Chennai</title>
+<meta name="description" content="Homemade lunch, tiffin and dinner subscriptions delivered across Chennai. Weekly menu, meal plans, area-wise delivery.">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fffaf0;--card:#fff;--text:#2e2417;--muted:#7a6a55;--green:#2f7d3a;--orange:#e5731f;--line:#efe3cc}
+html{scroll-padding-top:calc(60px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17130d;--card:#221c13;--text:#f6eddc;--muted:#b9a98f;--green:#6cc47a;--orange:#f08b3d;--line:#352c1d}}
+:root[data-theme="dark"]{--bg:#17130d;--card:#221c13;--text:#f6eddc;--muted:#b9a98f;--green:#6cc47a;--orange:#f08b3d;--line:#352c1d}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Poppins,Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-weight:700;color:var(--green);font-size:1.1rem}
+nav a{color:var(--text);text-decoration:none;margin-right:14px;font-size:.88rem}
+@media(max-width:700px){nav{display:none}}
+.btn{display:inline-block;background:var(--orange);color:#fff;border:0;border-radius:12px;padding:12px 22px;font:inherit;font-weight:600;text-decoration:none;cursor:pointer;margin-right:8px}
+.btn.alt{background:transparent;color:var(--green);border:2px solid var(--green)}
+.btn.sm{padding:8px 16px;margin:0}
+.hero{padding:42px 0 20px;display:grid;gap:22px;align-items:center}
+@media(min-width:720px){.hero{grid-template-columns:1.2fr 1fr}}
+h1{font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.15;margin:0 0 12px}
+h1 span{color:var(--orange)}
+.sub{color:var(--muted);max-width:48ch;margin:0 0 20px}
+.heroimg{font-size:6.5rem;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:26px}
+section{padding:28px 0}
+h2{font-size:1.5rem;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.card h3{margin:6px 0;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.9rem}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:99px;padding:6px 14px;font:inherit;cursor:pointer}
+.tabs button.on{background:var(--green);color:#fff;border-color:var(--green)}
+.meal{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+.meal .e{font-size:2rem}
+.meal b{display:block}
+.lab{font-size:.72rem;color:var(--orange);font-weight:700;text-transform:uppercase}
+.price{font-size:1.7rem;font-weight:800;margin:6px 0}
+.price small{font-size:.8rem;font-weight:500;color:var(--muted)}
+.plan.pop{border:2px solid var(--orange);position:relative}
+.plan.pop::before{content:"Best value";position:absolute;top:-12px;left:18px;background:var(--orange);color:#fff;font-size:.72rem;padding:2px 12px;border-radius:99px;font-weight:700}
+.plan ul{padding-left:18px;margin:10px 0 14px;color:var(--muted);font-size:.9rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+.scroll{overflow-x:auto}
+.chk{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chk input{flex:1;min-width:180px}
+.res{margin-top:10px;font-weight:600}
+form{display:grid;gap:10px;max-width:560px}
+label{font-size:.85rem;font-weight:600}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font:inherit}
+.two{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.note{font-size:.8rem;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:24px 0 90px;color:var(--muted);font-size:.88rem}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:99px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:6}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo">🍛 Amma Soru</div>
+  <nav><a href="#menu">Weekly menu</a><a href="#plans">Plans</a><a href="#areas">Delivery areas</a><a href="#subscribe">Subscribe</a></nav>
+  <a class="btn sm" href="#subscribe">Subscribe</a>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div>
+    <h1>Ghar ka khana, <span>amma style</span> soru.</h1>
+    <p class="sub">Fresh homemade lunch, tiffin and dinner delivered to your home or office in Chennai. Weekly menu, flexible plans, no cooking tension.</p>
+    <a class="btn" href="#plans">See plans</a><a class="btn alt" href="#menu">This week's menu</a>
+  </div>
+  <div class="heroimg" aria-hidden="true">🍛</div>
+</div>
+
+<section>
+  <div class="grid">
+    <div class="card"><div style="font-size:2rem">🏠</div><h3>Homemade</h3><p>Cooked fresh every morning with less oil and clean ingredients.</p></div>
+    <div class="card"><div style="font-size:2rem">📅</div><h3>Weekly menu</h3><p>Different dishes daily, so you never get bored.</p></div>
+    <div class="card"><div style="font-size:2rem">🛵</div><h3>On-time delivery</h3><p>Lunch by 12:30 PM, dinner by 7:30 PM.</p></div>
+    <div class="card"><div style="font-size:2rem">⏸️</div><h3>Pause anytime</h3><p>Travelling? Inform one day before and skip meals.</p></div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Weekly menu</h2>
+  <p class="lead">Menu changes every week. Sample menu shown, edit in the script.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="card" id="menubox"></div>
+</section>
+
+<section id="plans">
+  <h2>Subscription plans</h2>
+  <p class="lead">Choose a plan. Prices are samples, edit before sharing.</p>
+  <div class="grid" id="plangrid"></div>
+</section>
+
+<section id="areas">
+  <h2>Delivery areas</h2>
+  <p class="lead">Check if we deliver to your area.</p>
+  <div class="card scroll">
+    <table><thead><tr><th>Area</th><th>Delivery charge / day</th><th>Time</th></tr></thead><tbody id="areatable"></tbody></table>
+    <div class="chk"><input id="areain" placeholder="Type your area (e.g., Velachery)"><button class="btn sm" id="areabtn">Check</button></div>
+    <div class="res" id="areares"></div>
+  </div>
+</section>
+
+<section id="subscribe">
+  <h2>Subscribe / Order</h2>
+  <div class="card">
+  <form id="f">
+    <div class="two">
+      <div><label>Name</label><input id="n" required></div>
+      <div><label>Phone</label><input id="p" type="tel" required></div>
+    </div>
+    <div class="two">
+      <div><label>Plan</label><select id="pl"></select></div>
+      <div><label>Meal type</label><select id="mt"><option>Veg</option><option>Non-veg (on selected days)</option></select></div>
+    </div>
+    <div class="two">
+      <div><label>Meals</label><select id="ml"><option>Lunch</option><option>Dinner</option><option>Lunch + Dinner</option><option>Breakfast + Lunch</option></select></div>
+      <div><label>Start date</label><input id="sd" type="date" required></div>
+    </div>
+    <div><label>Delivery area</label><select id="ar"></select></div>
+    <div><label>Full address</label><textarea id="ad" rows="2" required></textarea></div>
+    <div><label>Food preferences / allergies</label><input id="pf" placeholder="Less spicy, no onion, etc."></div>
+    <button class="btn" type="submit">Send on WhatsApp</button>
+    <p class="note">We confirm availability and share UPI payment details on WhatsApp. Payment in advance for the plan.</p>
+  </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <p><b>Contact:</b> WhatsApp +91 90000 00000 · Instagram @yourhandle · Chennai</p>
+  <p><b>FSSAI License No:</b> XXXXXXXXXXXXXX</p>
+  <p>© Amma Soru · Privacy · Terms</p>
+</div></footer>
+<a class="wa" id="waf" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+
+<script>
+// ===== EDIT THESE =====
+var WA="919000000000";
+var MENU={
+ Mon:{b:["🥞","Idli, sambar, chutney"],l:["🍛","Sambar rice, beans poriyal, appalam, curd"],d:["🫓","Chapati, dal fry"]},
+ Tue:{b:["🥞","Pongal, vada"],l:["🍚","Lemon rice, potato fry, curd rice"],d:["🥞","Dosa, coconut chutney"]},
+ Wed:{b:["🥞","Dosa, tomato chutney"],l:["🍛","Rasam rice, cabbage poriyal, appalam"],d:["🫓","Chapati, veg kurma"]},
+ Thu:{b:["🥞","Upma, chutney"],l:["🍛","Vegetable biryani, raita"],d:["🥞","Idli, podi"]},
+ Fri:{b:["🥞","Poori, potato masala"],l:["🍛","Sambar rice, carrot poriyal, curd"],d:["🫓","Chapati, paneer gravy"]},
+ Sat:{b:["🥞","Pesarattu, ginger chutney"],l:["🍛","Tomato rice, kootu, curd rice"],d:["🥞","Uthappam, sambar"]},
+ Sun:{b:["🥞","Idli, vada, sambar"],l:["🍗","Special meals (veg / chicken curry)"],d:["🫓","Light dinner, fruit"]}
+};
+var PLANS=[
+ {n:"Trial",d:"3 days",p:300,u:"3 days",f:["Try before you subscribe","1 meal per day","Choose Lunch or Dinner"]},
+ {n:"Weekly",d:"6 days",p:660,u:"week",f:["1 meal per day, Mon to Sat","Weekly menu","Pause with 1 day notice"],pop:0},
+ {n:"Monthly",d:"26 days",p:2600,u:"month",f:["1 meal per day","Best value","1 free skip day"],pop:1},
+ {n:"Lunch + Dinner",d:"26 days",p:4800,u:"month",f:["2 meals per day","Monthly plan","Priority delivery"]}
+];
+var AREAS=[
+ {a:"Velachery",c:0,t:"12:00 - 12:45"},
+ {a:"Guindy",c:10,t:"12:15 - 1:00"},
+ {a:"Adyar",c:15,t:"12:15 - 1:00"},
+ {a:"T. Nagar",c:20,t:"12:30 - 1:15"},
+ {a:"Tambaram",c:25,t:"12:30 - 1:15"}
+];
+// ======================
+var $=function(i){return document.getElementById(i)};
+var days=Object.keys(MENU), cur=days[0];
+function renderTabs(){$("tabs").innerHTML=days.map(function(d){return '<button data-d="'+d+'" class="'+(d===cur?"on":"")+'">'+d+'</button>'}).join("")}
+function renderMenu(){
+  var m=MENU[cur], rows=[["Breakfast",m.b],["Lunch",m.l],["Dinner",m.d]];
+  $("menubox").innerHTML=rows.map(function(r){return '<div class="meal"><div class="e">'+r[1][0]+'</div><div><span class="lab">'+r[0]+'</span><b>'+r[1][1]+'</b></div></div>'}).join("");
+}
+$("tabs").addEventListener("click",function(e){var d=e.target.getAttribute("data-d"); if(d){cur=d;renderTabs();renderMenu()}});
+$("plangrid").innerHTML=PLANS.map(function(p){
+  return '<div class="card plan'+(p.pop?' pop':'')+'"><h3>'+p.n+'</h3><div class="price">₹'+p.p+'<small> / '+p.u+'</small></div><p>'+p.d+'</p><ul>'+p.f.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><a class="btn sm" href="#subscribe" data-plan="'+p.n+'">Choose</a></div>';
+}).join("");
+$("plangrid").addEventListener("click",function(e){var p=e.target.getAttribute("data-plan"); if(p)$("pl").value=p});
+$("pl").innerHTML=PLANS.map(function(p){return '<option>'+p.n+'</option>'}).join("");
+$("ar").innerHTML=AREAS.map(function(a){return '<option>'+a.a+'</option>'}).join("")+'<option>Other (will confirm)</option>';
+$("areatable").innerHTML=AREAS.map(function(a){return '<tr><td>'+a.a+'</td><td>'+(a.c?'₹'+a.c:'Free')+'</td><td>'+a.t+'</td></tr>'}).join("");
+$("areabtn").onclick=function(){
+  var q=$("areain").value.trim().toLowerCase(), r=$("areares");
+  if(!q){r.textContent="";return}
+  var f=AREAS.filter(function(a){return a.a.toLowerCase().indexOf(q)>-1})[0];
+  r.textContent=f?("✅ We deliver to "+f.a+". Charge: "+(f.c?"₹"+f.c+" per day":"Free")+"."):"We may still deliver there. Please message us on WhatsApp to confirm.";
+};
+$("f").addEventListener("submit",function(e){
+  e.preventDefault();
+  var v=function(i){return $(i).value.trim()};
+  var msg="Hi! I'd like to subscribe to your meal service.\n\nName: "+v("n")+"\nPhone: "+v("p")+"\nPlan: "+v("pl")+"\nMeals: "+v("ml")+"\nType: "+v("mt")+"\nStart date: "+v("sd")+"\nArea: "+v("ar")+"\nAddress: "+v("ad")+"\nPreferences: "+(v("pf")||"None");
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank");
+});
+$("waf").href="https://wa.me/"+WA+"?text="+encodeURIComponent("Hi! I want to know about your meal plans.");
+renderTabs();renderMenu();
+</script>
+</body>
+</html>
